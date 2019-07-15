@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/petra"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Seyaha"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="45sp"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the best way to navigate through jordan and discover new places .let's get started"
+        android:textSize="15sp"
+        android:layout_below="@id/welcome"
+        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continue with :"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_below="@id/disc"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cont"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GMAIL"
+            android:drawableLeft="@drawable/google"
+            android:paddingRight="40dp"
+            android:background="@drawable/btn_shape"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/facebook"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/gmail"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FaceBook"
+            android:background="@drawable/btn_shape2"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
